@@ -1,0 +1,5 @@
+{
+  "extension": ["js", "ts"],
+  "require": "laboperator-middleware-development/babel-register.spec",
+  "timeout": 5000
+}
