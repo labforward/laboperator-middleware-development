@@ -1,6 +1,6 @@
 # laboperator-middleware-development
 
-This repo is meant to be used as a development dependency of specialized middleware between Laboperator and an external system.
+This repo is meant to be used as a development dependency, together with [laboperator-middleware](https://github.com/labforward/laboperator-middleware) as a dependency, of specialized middleware between Laboperator and an external system.
 
 By using it, each specialized middleware will be provided with:
 
