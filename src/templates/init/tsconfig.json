@@ -1,0 +1,12 @@
+{
+  "extends": "laboperator-middleware-development/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "paths": {
+      "~/*": ["*"],
+      "laboperator-middleware/*": ["../node_modules/laboperator-middleware/src/*"]
+    }
+  },
+  "include": ["src"]
+}

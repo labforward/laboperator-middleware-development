@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const app = require('laboperator-middleware').default;
+const config = require('laboperator-middleware/config').default;
+
+const port = process.env.PORT || 8000;
+
+app.listen(port, () => {
+  config.logger.info(`Listening at PORT: ${port}`);
+});
