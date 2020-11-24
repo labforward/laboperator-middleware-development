@@ -4,7 +4,8 @@
     "baseUrl": "./src",
     "outDir": "dist",
     "paths": {
-      "~/*": ["*"]
+      "~/*": ["*"],
+      "laboperator-middleware/*": ["../node_modules/laboperator-middleware/src/*"]
     }
   },
   "include": ["src"]
