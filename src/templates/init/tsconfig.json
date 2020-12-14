@@ -5,8 +5,9 @@
     "outDir": "dist",
     "paths": {
       "~/*": ["*"],
-      "laboperator-middleware/*": ["../node_modules/laboperator-middleware/src/*"]
-    }
+      "laboperator-middleware/*": ["../node_modules/laboperator-middleware/dist/*"]
+    },
+    "skipLibCheck": true
   },
   "include": ["src"]
 }
