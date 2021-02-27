@@ -1,5 +1,5 @@
-import config from 'laboperator-middleware/config';
 import { addFixtures } from 'laboperator-middleware/test_helper';
+import config from 'laboperator-middleware/config';
 
 import fixtures from './fixtures';
 
