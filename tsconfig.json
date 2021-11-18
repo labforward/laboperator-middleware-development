@@ -1,9 +1,10 @@
 {
-  "extends": "labforward-config-base",
+  "extends": "@labforward/config/tsconfig",
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
-    "lib": ["es2020"]
+    "lib": ["es2020"],
+    "skipLibCheck": true
   },
   "include": ["src"],
   "exclude": ["src/templates"]
