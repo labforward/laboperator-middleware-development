@@ -1,9 +1,17 @@
 {
-  "extends": "labforward-config-base",
+  "extends": "@labforward/config/tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "./src",
     "declaration": true,
     "emitDeclarationOnly": true,
-    "lib": ["es2020"]
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "paths": {
+      "~/*": ["*"],
+      "laboperator-middleware/*": [
+        "../node_modules/laboperator-middleware/dist/*"
+      ]
+    }
   },
   "include": ["src"],
   "exclude": ["src/templates"]
