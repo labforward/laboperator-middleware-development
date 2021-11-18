@@ -1,7 +1,7 @@
 ################################
 # Stage: Builder
 ################################
-FROM node:lts-alpine as builder
+FROM node:14-alpine as builder
 
 ENV NODE_ENV=development
 ENV NODE_OPTIONS=--max_old_space_size=4096
@@ -32,7 +32,7 @@ RUN yarn install --frozen-lockfile --non-interactive
 ################################
 # Stage: Final (production/test)
 ################################
-FROM node:lts-alpine as final
+FROM node:14-alpine as final
 
 ENV NODE_ENV=production
 
