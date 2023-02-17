@@ -1,13 +1,13 @@
 {
   "name": "laboperator-middleware-development",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Laboperator Middleware Development Config & Tools",
   "repository": "git@github.com:labforward/laboperator-middleware-development.git",
   "author": "labforward GmbH",
   "license": "Apache-2.0",
   "private": true,
   "engine": {
-    "node": "^14.0.0"
+    "node": "^18.14.0"
   },
   "bin": {
     "laboperator-middleware": "./bin/cli"
@@ -29,7 +29,7 @@
     "@types/mocha": "^8.2.0",
     "@types/morgan": "^1.9.2",
     "@types/sinon-chai": "^3.2.5",
-    "@types/yargs": "^15.0.11",
+    "@types/yargs": "^17.0.22",
     "babel-plugin-root-import": "^6.6.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
@@ -39,14 +39,14 @@
     "fs-extra": "^9.0.1",
     "labforward-config-base": "https://github.com/labforward/labforward-config-base",
     "lodash": "^4.17.20",
-    "mocha": "^8.2.1",
-    "mocha-junit-reporter": "^2.0.0",
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.0",
     "mocha-multi-reporters": "^1.5.1",
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.20",
     "sinon": "^9.2.2",
     "sinon-chai": "^3.5.0",
     "typescript": "^4.1.3",
-    "yargs": "^16.2.0"
+    "yargs": "^17.7.0"
   },
   "importSort": {
     ".js, .jsx, .ts, .tsx": {
