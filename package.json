@@ -1,13 +1,13 @@
 {
   "name": "laboperator-middleware-development",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Laboperator Middleware Development Config & Tools",
   "repository": "git@github.com:labforward/laboperator-middleware-development.git",
   "author": "labforward GmbH",
   "license": "Apache-2.0",
   "private": true,
   "engine": {
-    "node": "^18.14.0"
+    "node": "^18.13.0"
   },
   "bin": {
     "laboperator-middleware": "./bin/cli"
