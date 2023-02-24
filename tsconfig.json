@@ -3,8 +3,9 @@
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
+    "esModuleInterop": true,
     "lib": ["es2020"]
   },
   "include": ["src"],
-  "exclude": ["src/templates"]
+  "exclude": ["src/templates", "node_modules"]
 }
