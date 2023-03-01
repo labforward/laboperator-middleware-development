@@ -12,8 +12,10 @@ module.exports = async () => {
 
     console.log('Installing dependencies...');
     execSync(
-      'yarn add --dev https://github.com/labforward/laboperator-middleware-development',
-      { stdio: 'inherit' }
+      'yarn add --dev @types/node eslint labforward/laboperator-middleware-development prettier typescript',
+      {
+        stdio: 'inherit',
+      }
     );
 
     console.log("Done! Don't forget to update config.yml!");
