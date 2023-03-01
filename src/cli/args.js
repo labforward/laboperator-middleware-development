@@ -16,11 +16,17 @@ const serverOption = (command) =>
     });
 
 const testOption = (command) =>
-  command.option('ci', {
-    default: false,
-    description: 'Run in CI mode.',
-    type: 'boolean',
-  });
+  command
+    .option('ci', {
+      default: false,
+      description: 'Run in CI mode.',
+      type: 'boolean',
+    })
+    .option('watch', {
+      default: false,
+      description: 'Run in watch mode.',
+      type: 'boolean',
+    });
 
 const buildOption = (command) =>
   command.positional('tag', {
