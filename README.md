@@ -6,7 +6,7 @@ By using it, each specialized middleware will be provided with:
 
 - linter (eslint, prettier)
 - typescript
-- mocha test runner
+- jest test runner
 
 ## Installation
 
