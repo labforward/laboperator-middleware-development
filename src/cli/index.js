@@ -12,7 +12,7 @@ args({
   server: (argv) => {
     if (argv.watch) {
       nodemon({
-        runner,
+        script: runner,
         args: process.argv.slice(2),
         ext: 'js,ts,yml',
         watch: 'src',
