@@ -1,0 +1,19 @@
+extends:
+  - '@labforward/node'
+
+rules:
+  import/no-unresolved:
+    - off
+    - commonjs: true
+      caseSensitive: true
+      ignore:
+        # ref: https://github.com/benmosher/eslint-plugin-import/issues/1810
+        - '^laboperator-middleware/(config|errors|helpers|laboperator|test_helper)$'
+  '@typescript-eslint/no-var-requires': off
+
+overrides:
+  - files:
+      - src/test_helper/fixtures/**/*.js
+      - src/test_helper/fixtures/**/*.ts
+    rules:
+      camelcase: 'off'

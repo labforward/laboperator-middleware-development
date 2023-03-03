@@ -6,14 +6,14 @@ By using it, each specialized middleware will be provided with:
 
 - linter (eslint, prettier)
 - typescript
-- mocha test runner
+- jest test runner
 
 ## Installation
 
 - Install it as a development dependency using:
 
   ```
-  yarn add --dev git+ssh://git@github.com:labforward/laboperator-middleware-development.git
+  yarn add --dev labforward/laboperator-middleware-development
   ```
 
 - Run init:
@@ -29,8 +29,8 @@ By using it, each specialized middleware will be provided with:
 
   ```
   "importSort": {
-    ".js, .jsx, .ts, .tsx": {
-      "style": "labforward"
+    ".js, .ts": {
+      "style": "@labforward/config/import-sort"
     }
   },
   ```

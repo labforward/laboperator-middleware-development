@@ -1,4 +1,4 @@
-/* eslint-disable import/no-unresolved, import/no-dynamic-require */
+/* eslint-disable import/no-dynamic-require */
 const path = require('path');
 const compile = require('./compile');
 
