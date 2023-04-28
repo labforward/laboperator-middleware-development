@@ -43,7 +43,10 @@ jobs:
       - *load_cache
       - run: yarn install --frozen-lockfile
       - *save_cache
-      - run: yarn laboperator-middleware test --ci
+      - run:
+          command: yarn jest --ci --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: /tmp/reports
       - store_test_results:
           path: /tmp/reports
 
