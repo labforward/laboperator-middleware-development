@@ -25,15 +25,6 @@ By using it, each specialized middleware will be provided with:
   Which will bootstrap your middleware with linters, tests, and sample routes.
 
 - Replace the placeholder values in `config.yml` with actual values.
-- Add the following to `package.json`:
-
-  ```
-  "importSort": {
-    ".js, .ts": {
-      "style": "@labforward/config/import-sort"
-    }
-  },
-  ```
 
 ## Starting server
 
