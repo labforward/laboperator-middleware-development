@@ -1,4 +1,5 @@
-FROM node:lts-alpine as base
+# https://github.com/nodejs/node/issues/46221
+FROM node:18.12.1-alpine as base
 
 ENV NODE_ENV=production
 ENV NODE_OPTIONS=--max_old_space_size=4096
