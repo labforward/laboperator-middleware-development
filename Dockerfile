@@ -1,20 +1,21 @@
-################################
-# Stage: Builder
-################################
-FROM node:lts-alpine as builder
+FROM node:lts-alpine as base
 
 ENV NODE_ENV=production
 ENV NODE_OPTIONS=--max_old_space_size=4096
 
+RUN mkdir /middleware
+WORKDIR /middleware
+
+################################
+# Stage: Builder
+################################
+FROM base as builder
+
 RUN apk --update --no-cache add \
     build-base \
     git \
-    yarn \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /var/cache/apk/*
-
-RUN mkdir /middleware
-WORKDIR /middleware
 
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile --production=false --non-interactive
@@ -34,9 +35,7 @@ RUN rm -rf node_modules src
 ################################
 # Stage: Final (production/test)
 ################################
-FROM node:lts-alpine as final
-
-ENV NODE_ENV=production
+FROM base
 
 # https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file
 ENV NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
@@ -44,12 +43,11 @@ ENV NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
 RUN apk --update --no-cache add \
     bash \
     ca-certificates \
+    git \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /var/cache/apk/*
 
-COPY --from=Builder /middleware /middleware
-
-WORKDIR /middleware
+COPY --from=builder /middleware /middleware
 
 # Reinstall runtime dependencies
 RUN yarn install --frozen-lockfile --non-interactive \
