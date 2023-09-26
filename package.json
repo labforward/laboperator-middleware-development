@@ -22,7 +22,7 @@
     "@types/jest": "^29.5.5",
     "@types/lodash": "^4.14.199",
     "@types/morgan": "^1.9.5",
-    "@types/supertest": "^2.0.12",
+    "@types/supertest": "^2.0.13",
     "@types/yargs": "^17.0.25",
     "babel-plugin-root-import": "^6.6.0",
     "copyfiles": "^2.4.1",
