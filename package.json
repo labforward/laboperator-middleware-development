@@ -17,7 +17,7 @@
     "@labforward/config": "~0.1.5",
     "@labforward/eslint-config-node": "~0.1.5",
     "@types/express": "^4.17.21",
-    "@types/fs-extra": "^11.0.3",
+    "@types/fs-extra": "^11.0.4",
     "@types/http-errors": "^2.0.3",
     "@types/jest": "^29.5.7",
     "@types/lodash": "^4.14.200",
