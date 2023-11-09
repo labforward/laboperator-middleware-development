@@ -21,7 +21,7 @@
     "@types/http-errors": "^2.0.4",
     "@types/jest": "^29.5.7",
     "@types/lodash": "^4.14.201",
-    "@types/morgan": "^1.9.8",
+    "@types/morgan": "^1.9.9",
     "@types/supertest": "^2.0.16",
     "@types/yargs": "^17.0.31",
     "babel-plugin-root-import": "^6.6.0",
