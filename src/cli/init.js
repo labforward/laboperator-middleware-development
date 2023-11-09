@@ -1,7 +1,8 @@
 /* eslint-disable no-console */
-const fse = require('fs-extra');
 const path = require('path');
 const { execSync } = require('child_process');
+
+const fse = require('fs-extra');
 
 module.exports = async () => {
   try {
@@ -15,7 +16,7 @@ module.exports = async () => {
       'yarn add --dev @types/node eslint labforward/laboperator-middleware-development prettier typescript',
       {
         stdio: 'inherit',
-      }
+      },
     );
 
     console.log("Done! Don't forget to update config.yml!");
