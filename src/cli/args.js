@@ -43,7 +43,7 @@ const cli = yargs
   .command(
     'build <tag>',
     'Package the middleware into docker image',
-    buildOption
+    buildOption,
   )
   .alias('server', 's')
   .help()

@@ -1,7 +1,7 @@
 const { execSync } = require('child_process');
 
 module.exports = (argv) => {
-  const { watch, ci } = argv;
+  const { ci, watch } = argv;
 
   const command = `yarn jest ${watch ? '--watch' : ''} ${ci ? '--ci' : ''}`;
 

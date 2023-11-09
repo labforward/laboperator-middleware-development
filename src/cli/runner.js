@@ -6,4 +6,4 @@ const init = require('./init');
 const server = require('./server');
 const test = require('./test');
 
-args({ server, init, clean, compile, test, build });
+args({ build, clean, compile, init, server, test });

@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /* eslint-disable import/no-dynamic-require */
 
-const nodemon = require('nodemon');
 const path = require('path');
+
+const nodemon = require('nodemon');
+
 const args = require('./args');
 
 const runner = path.resolve(__dirname, './runner');
@@ -12,9 +14,9 @@ args({
   server: (argv) => {
     if (argv.watch) {
       nodemon({
-        script: runner,
         args: process.argv.slice(2),
         ext: 'js,ts,yml',
+        script: runner,
         watch: 'src',
       });
 
