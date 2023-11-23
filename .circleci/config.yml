@@ -1,0 +1,24 @@
+---
+version: 2.1
+
+jobs:
+  tests:
+    docker:
+      - image: cimg/node:lts
+        environment:
+          NODE_ENV: test
+    steps:
+      - setup_remote_docker
+      - run: yarn add --dev labforward/laboperator-middleware-development#$CIRCLE_SHA1
+      - run: yarn laboperator-middleware init
+      - run: yarn laboperator-middleware test
+      - run: yarn laboperator-middleware compile
+      - run: yarn laboperator-middleware clean
+      - run: yarn laboperator-middleware build test
+
+workflows:
+  version: 2
+
+  tests:
+    jobs:
+      - tests
