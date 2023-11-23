@@ -13,11 +13,14 @@ module.exports = async () => {
 
     console.log('Installing dependencies...');
     execSync(
-      'yarn add --dev @types/node eslint labforward/laboperator-middleware-development prettier typescript',
+      'yarn add labforward/laboperator-middleware swagger-client@3.18.5',
       {
         stdio: 'inherit',
       },
     );
+    execSync('yarn add --dev @types/node eslint prettier typescript', {
+      stdio: 'inherit',
+    });
 
     console.log("Done! Don't forget to update config.yml!");
   } catch (error) {
