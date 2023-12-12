@@ -1,5 +1,13 @@
+# Editor config, OS specific files, .git, etc
 .*
+
+# NPM dependencies
+!.yarnrc.yml
+.yarn/*
+node_modules/
+
+# Misc
 build
-log
-node_modules
-storage/tokens-*
+dist
+storage
+*.log

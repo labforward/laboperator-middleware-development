@@ -15,19 +15,6 @@ const serverOption = (command) =>
       type: 'boolean',
     });
 
-const testOption = (command) =>
-  command
-    .option('ci', {
-      default: false,
-      description: 'Run in CI mode.',
-      type: 'boolean',
-    })
-    .option('watch', {
-      default: false,
-      description: 'Run in watch mode.',
-      type: 'boolean',
-    });
-
 const buildOption = (command) =>
   command.positional('tag', {
     describe: 'the image tag',
@@ -35,11 +22,12 @@ const buildOption = (command) =>
   });
 
 const cli = yargs
+  .parserConfiguration({ 'unknown-options-as-args': true })
   .command('server', 'Start the development server', serverOption)
   .command('init', 'Initialize a new middleware')
   .command('clean', 'Clean build output')
   .command('compile', 'Compile into javascript')
-  .command('test', 'Run specs', testOption)
+  .command('test', 'Run specs via jest. All options are passed to jest as is.')
   .command(
     'build <tag>',
     'Package the middleware into docker image',

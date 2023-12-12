@@ -18,15 +18,16 @@ RUN apk --update --no-cache add \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /var/cache/apk/*
 
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile --production=false --non-interactive
+COPY .yarnrc.yml package.json yarn.lock ./
+RUN corepack enable \
+ && NODE_ENV=development yarn install --immutable
 
 COPY . /middleware
 WORKDIR /middleware
 
-RUN mkdir -p bin
-RUN cp ./node_modules/laboperator-middleware-development/docker-entrypoint.sh ./
-RUN cp ./node_modules/laboperator-middleware-development/bin/server ./bin/server
+RUN mkdir -p bin \
+ && cp ./node_modules/laboperator-middleware-development/docker-entrypoint.sh ./ \
+ && cp ./node_modules/laboperator-middleware-development/bin/server ./bin/server
 
 RUN yarn laboperator-middleware compile
 
@@ -51,7 +52,8 @@ RUN apk --update --no-cache add \
 COPY --from=builder /middleware /middleware
 
 # Reinstall runtime dependencies
-RUN yarn install --frozen-lockfile --non-interactive \
+RUN corepack enable \
+ && yarn install --immutable \
  && yarn cache clean --all
 
 # FIX: https://github.com/nodejs/docker-node/issues/1776
