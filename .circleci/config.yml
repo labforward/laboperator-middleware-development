@@ -7,9 +7,15 @@ jobs:
       - image: cimg/node:18.12.1
         environment:
           NODE_ENV: test
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
     steps:
       - setup_remote_docker
-      - run: yarn add --dev labforward/laboperator-middleware-development#$CIRCLE_SHA1
+      - run: |
+          sudo corepack enable
+          corepack prepare yarn@4.0.2 --activate
+          echo "nodeLinker: node-modules" > .yarnrc.yml
+          yarn init
+      - run: yarn add --dev laboperator-middleware-development@labforward/laboperator-middleware-development#$CIRCLE_SHA1
       - run: yarn laboperator-middleware init
       - run: yarn laboperator-middleware test
       - run: yarn laboperator-middleware compile
