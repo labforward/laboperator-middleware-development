@@ -15,5 +15,5 @@ node_modules/
 # Misc
 build
 dist
-storage
+storage/tokens-*
 *.log
