@@ -33,7 +33,7 @@
     "lodash": "^4.17.21",
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5",
-    "supertest": "^6.3.4",
+    "supertest": "^7.0.0",
     "typescript": "^5.4.5",
     "yargs": "^17.7.2"
   },
