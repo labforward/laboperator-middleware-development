@@ -10,9 +10,9 @@
     "laboperator-middleware": "./bin/cli"
   },
   "dependencies": {
-    "@babel/cli": "^7.24.1",
-    "@babel/core": "^7.24.4",
-    "@babel/preset-env": "^7.24.4",
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
     "@babel/preset-typescript": "^7.24.1",
     "@labforward/config": "~0.1.5",
     "@labforward/eslint-config-node": "~0.1.5",
