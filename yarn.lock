@@ -3857,20 +3857,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fetch-mock@npm:^10.0.7":
-  version: 10.0.7
-  resolution: "fetch-mock@npm:10.0.7"
+"fetch-mock@npm:^10.0.8":
+  version: 10.0.8
+  resolution: "fetch-mock@npm:10.0.8"
   dependencies:
     debug: "npm:^4.1.1"
     glob-to-regexp: "npm:^0.4.0"
     is-subset: "npm:^0.1.1"
     lodash.isequal: "npm:^4.5.0"
     path-to-regexp: "npm:^2.2.1"
-    querystring: "npm:^0.2.1"
   peerDependenciesMeta:
     node-fetch:
       optional: true
-  checksum: 46f3980c63f9055c0cc9ff57c14027fe26649e555d8fa02279d0fdfab5317b6247bc2f3eb233effe69a940d63ff9aa130cc365ace511c717dfc2a15d14fca823
+  checksum: 214caa5937c555674d48cc38f1c2cc44220967bf8432d157087bada5743d2a16c134040c2ec6212cf4521159f433c42db137c9eeece031c71b0ba6c472993e54
   languageName: node
   linkType: hard
 
@@ -5388,7 +5387,7 @@ __metadata:
     "@types/yargs": "npm:^17.0.32"
     babel-plugin-root-import: "npm:^6.6.0"
     copyfiles: "npm:^2.4.1"
-    fetch-mock: "npm:^10.0.7"
+    fetch-mock: "npm:^10.0.8"
     fs-extra: "npm:^11.2.0"
     jest: "npm:^29.7.0"
     jest-junit: "npm:^16.0.0"
@@ -6216,13 +6215,6 @@ __metadata:
   dependencies:
     side-channel: "npm:^1.0.4"
   checksum: 4f95d4ff18ed480befcafa3390022817ffd3087fc65f146cceb40fc5edb9fa96cb31f648cae2fa96ca23818f0798bd63ad4ca369a0e22702fcd41379b3ab6571
-  languageName: node
-  linkType: hard
-
-"querystring@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "querystring@npm:0.2.1"
-  checksum: 6841b32bec4f16ffe7f5b5e4373b47ad451f079cde3a7f45e63e550f0ecfd8f8189ef81fb50079413b3fc1c59b06146e4c98192cb74ed7981aca72090466cd94
   languageName: node
   linkType: hard
 
