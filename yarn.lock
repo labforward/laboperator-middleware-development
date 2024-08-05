@@ -3875,9 +3875,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fetch-mock@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "fetch-mock@npm:10.1.1"
+"fetch-mock@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "fetch-mock@npm:11.0.0"
   dependencies:
     debug: "npm:^4.1.1"
     dequal: "npm:^2.0.3"
@@ -3887,7 +3887,7 @@ __metadata:
   peerDependenciesMeta:
     node-fetch:
       optional: true
-  checksum: ab3b0e739373ecd323420e04455a22f2658f4d2d27631cf5c2bfd8d88555536751797d2286f56d23247bf4382bd4deb15c00f81b61f464b07705b827942949ad
+  checksum: f483e3767e5fc1c42d00c5507aea66482771bf1976b413d78d6ed8199e3175b84fc52bf4ccc2875ca46d568b17b5dd07b37760cfbdb2b0b505a897715f48ee98
   languageName: node
   linkType: hard
 
@@ -5405,7 +5405,7 @@ __metadata:
     "@types/yargs": "npm:^17.0.32"
     babel-plugin-root-import: "npm:^6.6.0"
     copyfiles: "npm:^2.4.1"
-    fetch-mock: "npm:^10.1.1"
+    fetch-mock: "npm:^11.0.0"
     fs-extra: "npm:^11.2.0"
     jest: "npm:^29.7.0"
     jest-junit: "npm:^16.0.0"
