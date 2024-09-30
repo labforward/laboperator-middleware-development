@@ -60,4 +60,4 @@ RUN corepack enable \
 RUN find /usr/local/include/node/openssl/archs -mindepth 1 ! -regex '.*linux-x86_64.*' -delete
 
 ENTRYPOINT ["sh", "docker-entrypoint.sh"]
-CMD ["./bin/server"]
+CMD ["node", "./bin/server"]
