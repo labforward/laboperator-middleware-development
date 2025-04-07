@@ -34,7 +34,7 @@
     "nodemon": "^3.1.9",
     "prettier": "^3.5.3",
     "supertest": "^7.1.0",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.3",
     "yargs": "^17.7.2"
   },
   "packageManager": "yarn@4.0.2"
