@@ -1994,10 +1994,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/http-errors@npm:*, @types/http-errors@npm:^2.0.4":
+"@types/http-errors@npm:*":
   version: 2.0.4
   resolution: "@types/http-errors@npm:2.0.4"
   checksum: 494670a57ad4062fee6c575047ad5782506dd35a6b9ed3894cea65830a94367bd84ba302eb3dde331871f6d70ca287bfedb1b2cf658e6132cd2cbd427ab56836
+  languageName: node
+  linkType: hard
+
+"@types/http-errors@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@types/http-errors@npm:2.0.5"
+  checksum: 00f8140fbc504f47356512bd88e1910c2f07e04233d99c88c854b3600ce0523c8cd0ba7d1897667243282eb44c59abb9245959e2428b9de004f93937f52f7c15
   languageName: node
   linkType: hard
 
@@ -5420,7 +5427,7 @@ __metadata:
     "@labforward/eslint-config-node": "npm:~0.1.8"
     "@types/express": "npm:^5.0.2"
     "@types/fs-extra": "npm:^11.0.4"
-    "@types/http-errors": "npm:^2.0.4"
+    "@types/http-errors": "npm:^2.0.5"
     "@types/jest": "npm:^29.5.14"
     "@types/lodash": "npm:^4.17.17"
     "@types/morgan": "npm:^1.9.9"
