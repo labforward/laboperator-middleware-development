@@ -9,8 +9,8 @@ module.exports = (argv) => {
   compile();
 
   try {
-    app = require('laboperator-middleware').default;
-    config = require('laboperator-middleware/config').default;
+    app = require('middleware').default;
+    config = require('middleware/config').default;
   } catch {
     app = require(path.resolve('./dist')).default;
     config = require(path.resolve('./dist/config')).default;

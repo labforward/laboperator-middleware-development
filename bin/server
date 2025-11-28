@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const app = require('laboperator-middleware').default;
-const config = require('laboperator-middleware/config').default;
+const app = require('middleware').default;
+const config = require('middleware/config').default;
 
 const port = process.env.PORT || 8000;
 

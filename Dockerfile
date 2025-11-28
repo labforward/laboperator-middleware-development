@@ -26,10 +26,10 @@ COPY . /middleware
 WORKDIR /middleware
 
 RUN mkdir -p bin \
- && cp ./node_modules/laboperator-middleware-development/docker-entrypoint.sh ./ \
- && cp ./node_modules/laboperator-middleware-development/bin/server ./bin/server
+ && cp ./node_modules/middleware-development/docker-entrypoint.sh ./ \
+ && cp ./node_modules/middleware-development/bin/server ./bin/server
 
-RUN yarn laboperator-middleware compile
+RUN yarn middleware compile
 
 # Remove folders not needed in resulting image
 RUN rm -rf node_modules src
