@@ -11,6 +11,11 @@ updates:
       - 'dependencies'
       - 'automerge'
       - "kodiak: merge.method = 'squash'"
+    ignore:
+      # Newer version get stuck when running with supertest in CircleCI
+      - dependency-name: fetch-mock
+        versions:
+          - '> 9.11.0'
     groups:
       babel:
         patterns:
