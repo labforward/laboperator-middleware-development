@@ -1,21 +1,21 @@
 {
-  "name": "laboperator-middleware-development",
+  "name": "middleware-development",
   "version": "1.0.0",
-  "description": "Laboperator Middleware Development Config & Tools",
-  "repository": "git@github.com:labforward/laboperator-middleware-development.git",
-  "author": "labforward GmbH",
+  "description": "Middleware Development Config & Tools",
+  "repository": "git@github.com:laboperator-gmbh/middleware-development.git",
+  "author": "Laboperator GmbH",
   "license": "Apache-2.0",
   "private": true,
   "bin": {
-    "laboperator-middleware": "./bin/cli"
+    "middleware": "./bin/cli"
   },
   "dependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
     "@babel/preset-typescript": "^7.28.5",
-    "@labforward/config": "~0.1.8",
-    "@labforward/eslint-config-node": "~0.1.8",
+    "@laboperator-gmbh/config": "~0.1.8",
+    "@laboperator-gmbh/eslint-config-node": "~0.1.8",
     "@types/express": "^5.0.5",
     "@types/fs-extra": "^11.0.4",
     "@types/http-errors": "^2.0.5",
@@ -37,5 +37,5 @@
     "typescript": "^5.9.3",
     "yargs": "^17.7.2"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.12.0"
 }

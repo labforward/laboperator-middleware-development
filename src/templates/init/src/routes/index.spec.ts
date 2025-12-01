@@ -1,4 +1,4 @@
-import { server } from 'laboperator-middleware/test_helper';
+import { server } from 'middleware/test_helper';
 
 jest.retryTimes(1);
 

@@ -15,12 +15,12 @@ jobs:
           corepack prepare yarn@4.0.2 --activate
           echo "nodeLinker: node-modules" > .yarnrc.yml
           yarn init
-      - run: yarn add --dev laboperator-middleware-development@labforward/laboperator-middleware-development#$CIRCLE_SHA1
-      - run: yarn laboperator-middleware init
-      - run: yarn laboperator-middleware test
-      - run: yarn laboperator-middleware compile
-      - run: yarn laboperator-middleware clean
-      - run: yarn laboperator-middleware build test
+      - run: yarn add --dev middleware-development@laboperator-gmbh/middleware-development#$CIRCLE_SHA1
+      - run: yarn middleware init
+      - run: yarn middleware test
+      - run: yarn middleware compile
+      - run: yarn middleware clean
+      - run: yarn middleware build test
 
 workflows:
   version: 2

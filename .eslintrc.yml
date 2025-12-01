@@ -1,5 +1,5 @@
 extends:
-  - '@labforward/node'
+  - '@laboperator-gmbh/node'
 
 rules:
   import/no-unresolved:
@@ -8,7 +8,7 @@ rules:
       caseSensitive: true
       ignore:
         # ref: https://github.com/benmosher/eslint-plugin-import/issues/1810
-        - '^laboperator-middleware/(config|errors|helpers|laboperator|test_helper)$'
+        - '^middleware/(config|errors|helpers|laboperator|test_helper)$'
   '@typescript-eslint/no-var-requires': off
 
 overrides:

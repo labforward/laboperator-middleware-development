@@ -1,1 +1,1 @@
-import 'laboperator-middleware/types/global';
+import 'middleware/types/global';

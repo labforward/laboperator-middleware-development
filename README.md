@@ -1,6 +1,6 @@
-# laboperator-middleware-development
+# middleware-development
 
-This repo is meant to be used as a development dependency, together with [laboperator-middleware](https://github.com/labforward/laboperator-middleware) as a dependency, of specialized middleware between Laboperator and an external system.
+This repo is meant to be used as a development dependency, together with [middleware](https://github.com/laboperator-gmbh/middleware) as a dependency, of specialized middleware between Laboperator and an external system.
 
 By using it, each specialized middleware will be provided with:
 
@@ -13,13 +13,13 @@ By using it, each specialized middleware will be provided with:
 - Install it as a development dependency using:
 
   ```
-  yarn add --dev labforward/laboperator-middleware-development
+  yarn add --dev laboperator-gmbh/middleware-development
   ```
 
 - Run init:
 
   ```
-  yarn laboperator-middleware init
+  yarn middleware init
   ```
 
   Which will bootstrap your middleware with linters, tests, and sample routes.
@@ -29,13 +29,13 @@ By using it, each specialized middleware will be provided with:
 ## Starting server
 
 ```
-yarn laboperator-middleware server
+yarn middleware server
 ```
 
 ## Running test
 
 ```
-yarn laboperator-middleware test
+yarn middleware test
 ```
 
 ## Building server
@@ -43,7 +43,7 @@ yarn laboperator-middleware test
 The library come with a utility for building the middleware into docker image. To do so, you can run
 
 ```
-yarn laboperator-middleware build <tag>
+yarn middleware build <tag>
 ```
 
 on which `tag` is the docker image tag that you would like to use for that specific build, e.g. `special-middleware:v1.0.0`.

@@ -10,9 +10,7 @@ module.exports = (argv) => {
 
   execSync(
     `DOCKER_BUILDKIT=1 docker build -t ${head}:${tail} --file ${dockerfile} .`,
-    {
-      stdio: 'inherit',
-    },
+    { stdio: 'inherit' },
   );
   execSync(`docker save -o build/${head}-${tail}.tar ${head}:${tail}`, {
     stdio: 'inherit',
