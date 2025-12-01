@@ -1,4 +1,4 @@
-import { Express, Request, Response } from 'express';
+import type { Express, Request, Response } from 'express';
 import { jsonResponse } from 'middleware/helpers';
 
 export default (app: Express): void => {
