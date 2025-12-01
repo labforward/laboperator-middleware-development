@@ -9,6 +9,12 @@
   "bin": {
     "middleware": "./bin/cli"
   },
+  "exports": {
+    "./babel.config": "./babel.config.json",
+    "./jest.config": "./jest.config.js",
+    "./prettier.config": "./.prettierrc.cjs",
+    "./tsconfig": "./tsconfig.json"
+  },
   "dependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",

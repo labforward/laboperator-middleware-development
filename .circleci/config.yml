@@ -12,11 +12,12 @@ jobs:
       - setup_remote_docker
       - run: |
           sudo corepack enable
-          corepack prepare yarn@4.0.2 --activate
+          corepack prepare yarn@4.12.0 --activate
           echo "nodeLinker: node-modules" > .yarnrc.yml
           yarn init
       - run: yarn add --dev middleware-development@laboperator-gmbh/middleware-development#$CIRCLE_SHA1
       - run: yarn middleware init
+      - run: yarn middleware lint
       - run: yarn middleware test
       - run: yarn middleware compile
       - run: yarn middleware clean

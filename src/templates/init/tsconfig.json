@@ -1,5 +1,5 @@
 {
-  "extends": "middleware-development/tsconfig.json",
+  "extends": "middleware-development/tsconfig",
   "compilerOptions": {
     "baseUrl": "./src",
     "esModuleInterop": true,

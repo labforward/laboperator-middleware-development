@@ -23,11 +23,12 @@ const buildOption = (command) =>
 
 const cli = yargs
   .parserConfiguration({ 'unknown-options-as-args': true })
-  .command('server', 'Start the development server', serverOption)
   .command('init', 'Initialize a new middleware')
-  .command('clean', 'Clean build output')
-  .command('compile', 'Compile into javascript')
+  .command('lint', 'Lint via eslint')
   .command('test', 'Run specs via jest. All options are passed to jest as is.')
+  .command('compile', 'Compile into javascript')
+  .command('clean', 'Clean build output')
+  .command('server', 'Start the development server', serverOption)
   .command(
     'build <tag>',
     'Package the middleware into docker image',
