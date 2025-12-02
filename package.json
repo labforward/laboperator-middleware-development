@@ -22,7 +22,7 @@
     "@babel/preset-typescript": "^7.28.5",
     "@laboperator-gmbh/config": "~0.1.8",
     "@laboperator-gmbh/eslint-config-node": "~0.1.8",
-    "@types/express": "^5.0.5",
+    "@types/express": "^5.0.6",
     "@types/fs-extra": "^11.0.4",
     "@types/http-errors": "^2.0.5",
     "@types/jest": "^29.5.14",
