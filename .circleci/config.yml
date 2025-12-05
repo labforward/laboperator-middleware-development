@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   tests:
     docker:
-      - image: cimg/node:18.12.1
+      - image: cimg/node:lts
         environment:
           NODE_ENV: test
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
@@ -12,7 +12,6 @@ jobs:
       - setup_remote_docker
       - run: |
           sudo corepack enable
-          corepack prepare yarn@4.12.0 --activate
           echo "nodeLinker: node-modules" > .yarnrc.yml
           yarn init
       - run: yarn add --dev middleware-development@laboperator-gmbh/middleware-development#$CIRCLE_SHA1
