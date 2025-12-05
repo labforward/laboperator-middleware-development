@@ -17,7 +17,8 @@ jobs:
           yarn init
       - run: yarn add --dev middleware-development@laboperator-gmbh/middleware-development#$CIRCLE_SHA1
       - run: yarn middleware init
-      - run: yarn middleware lint
+      # disable until middleware is updated to eslint 9
+      # - run: yarn middleware lint
       - run: yarn middleware test
       - run: yarn middleware compile
       - run: yarn middleware clean
