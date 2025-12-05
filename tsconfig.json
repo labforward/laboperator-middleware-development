@@ -1,5 +1,5 @@
 {
-  "extends": "@laboperator-gmbh/config/tsconfig.json",
+  "extends": "@laboperator-gmbh/config/tsconfig",
   "compilerOptions": {
     "baseUrl": "./src",
     "declaration": true,
@@ -11,6 +11,6 @@
       "middleware/*": ["../node_modules/middleware/dist/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "eslint.config.d.ts"],
   "exclude": ["src/templates"]
 }
